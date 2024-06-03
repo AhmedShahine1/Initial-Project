@@ -1,0 +1,76 @@
+﻿@using InitialProject.Core.Helpers
+@model List<InitialProject.Core.DTO.EntityDTO.RequestResponseLog>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Request and Response Logs</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        pre {
+            white-space: pre-wrap;
+            word-wrap: break-word;
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-4">
+        <h1 class="mb-4">Request and Response Logs</h1>
+        <table class="table table-bordered table-striped">
+            <thead class="thead-dark">
+                <tr>
+                    <th>Timestamp</th>
+                    <th>Request URL</th>
+                    <th>HTTP Method</th>
+                    <th>Request Body</th>
+                    <th>Response Body</th>
+                </tr>
+            </thead>
+            <tbody id="logTableBody">
+                @foreach (var log in Model)
+                {
+                    <tr>
+                        <td>@log.Timestamp</td>
+                        <td>@log.RequestUrl</td>
+                        <td>@log.HttpMethod</td>
+                        <td><pre>@log.RequestBody</pre></td>
+                        <td><pre>@Html.Raw(JsonFormatter.FormatJson(log.ResponseBody))</pre></td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        function fetchLogs() {
+            $.ajax({
+                url: '/RequestResponseViewer/GetLogs', // Ensure this matches your controller action
+                method: 'GET',
+                success: function (data) {
+                    $('#logTableBody').empty();
+                    data.forEach(function (log) {
+                        $('#logTableBody').append(
+                            '<tr>' +
+                            '<td>' + log.timestamp + '</td>' +
+                            '<td>' + log.requestUrl + '</td>' +
+                            '<td>' + log.httpMethod + '</td>' +
+                            '<td><pre>' + log.requestBody + '</pre></td>' +
+                            '<td><pre>' + JSON.stringify(JSON.parse(log.responseBody), null, 2) + '</pre></td>' +
+                            '</tr>'
+                        );
+                    });
+                }
+            });
+        }
+
+        // Fetch logs every 10 seconds
+        setInterval(fetchLogs, 10000);
+
+        // Initial fetch
+        fetchLogs();
+    </script>
+</body>
+</html>
