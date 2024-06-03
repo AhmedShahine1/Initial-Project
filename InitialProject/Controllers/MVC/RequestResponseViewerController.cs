@@ -28,7 +28,7 @@ namespace InitialProject.Controllers.MVC
                 log.RequestUrl,
                 log.HttpMethod,
                 log.RequestBody,
-                ResponseBody = JsonFormatter.FormatJson(log.ResponseBody) // Ensure proper JSON formatting
+                ResponseBody = JsonFormatter.FormatJson(log.ResponseBody)
             });
             return Json(logDtos);
         }
