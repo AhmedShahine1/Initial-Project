@@ -7,10 +7,14 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="wwwroot\Files\Student\" />
-    <Folder Include="wwwroot\File\AdminImg\" />
-    <Folder Include="wwwroot\File\InitialProjectImg\" />
-    <Folder Include="wwwroot\File\YouthImg\" />
+    <Compile Remove="wwwroot\File\**" />
+    <Content Remove="wwwroot\File\**" />
+    <EmbeddedResource Remove="wwwroot\File\**" />
+    <None Remove="wwwroot\File\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation" Version="8.0.6" />
   </ItemGroup>
 
   <ItemGroup>

@@ -1,35 +1,5 @@
 ﻿@using InitialProject.Core.Helpers
 @model List<InitialProject.Core.DTO.EntityDTO.RequestResponseLog>
-
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8" />
-    <title>Request and Response Logs</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <style>
-        .response-body {
-            background-color: #2d2d2d;
-            color: #dcdcdc;
-            padding: 10px;
-            border-radius: 5px;
-            overflow: auto;
-            white-space: pre-wrap;
-            font-family: monospace;
-            max-height: 400px;
-        }
-
-        .action-buttons {
-            display: flex;
-            justify-content: flex-end;
-            margin-top: 10px;
-        }
-
-            .action-buttons button {
-                margin-left: 5px;
-            }
-    </style>
-</head>
 <body>
     <div class="container mt-4">
         <h1 class="mb-4">Request and Response Logs</h1>
@@ -126,4 +96,3 @@
         fetchLogs();
     </script>
 </body>
-</html>
