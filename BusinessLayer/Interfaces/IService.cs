@@ -1,4 +1,4 @@
-﻿namespace InitialProject.BusinessLayer.Interfaces;
+﻿namespace Ecommerce.BusinessLayer.Interfaces;
 
 public interface IService<T>
 {

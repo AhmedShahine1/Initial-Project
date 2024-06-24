@@ -1,10 +1,10 @@
-﻿using InitialProject.RepositoryLayer.Interfaces;
+﻿using Ecommerce.RepositoryLayer.Interfaces;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Query;
 using System.Linq.Expressions;
-using InitialProject.Core;
+using Ecommerce.Core;
 
-namespace InitialProject.RepositoryLayer.Repositories;
+namespace Ecommerce.RepositoryLayer.Repositories;
 
 public class BaseRepository<T> : IBaseRepository<T> where T : class
 {

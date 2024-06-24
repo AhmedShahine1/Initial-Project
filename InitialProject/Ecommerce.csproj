@@ -18,9 +18,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\BusinessLayer\InitialProject.BusinessLayer.csproj" />
-    <ProjectReference Include="..\Core\InitialProject.Core.csproj" />
-    <ProjectReference Include="..\RepositoryLayer\InitialProject.RepositoryLayer.csproj" />
+    <ProjectReference Include="..\BusinessLayer\Ecommerce.BusinessLayer.csproj" />
+    <ProjectReference Include="..\Core\Ecommerce.Core.csproj" />
+    <ProjectReference Include="..\RepositoryLayer\Ecommerce.RepositoryLayer.csproj" />
   </ItemGroup>
 
 </Project>

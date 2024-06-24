@@ -1,8 +1,8 @@
-﻿using InitialProject.BusinessLayer.Interfaces;
-using InitialProject.Core.Helpers;
+﻿using Ecommerce.BusinessLayer.Interfaces;
+using Ecommerce.Core.Helpers;
 using Microsoft.AspNetCore.Mvc;
 
-namespace InitialProject.Controllers.MVC
+namespace Ecommerce.Controllers.MVC
 {
     public class RequestResponseViewerController : Controller
     {

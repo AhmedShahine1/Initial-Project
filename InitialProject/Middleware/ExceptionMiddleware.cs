@@ -1,9 +1,9 @@
 using System.Net;
 using System.Text.Json;
-using InitialProject.Core.DTO;
+using Ecommerce.Core.DTO;
 
 
-namespace InitialProject.Middleware;
+namespace Ecommerce.Middleware;
 
 public class ExceptionMiddleware
 {

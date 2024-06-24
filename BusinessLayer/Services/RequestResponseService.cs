@@ -1,12 +1,12 @@
-﻿using InitialProject.BusinessLayer.Interfaces;
-using InitialProject.Core.DTO.EntityDTO;
+﻿using Ecommerce.BusinessLayer.Interfaces;
+using Ecommerce.Core.DTO.EntityDTO;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace InitialProject.BusinessLayer.Services
+namespace Ecommerce.BusinessLayer.Services
 {
     public class RequestResponseService : IRequestResponseService
     {

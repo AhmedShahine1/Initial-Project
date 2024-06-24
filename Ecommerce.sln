@@ -3,25 +3,25 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.10.34928.147
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InitialProject", "InitialProject\InitialProject.csproj", "{64FFCF97-AD7C-49BC-8F88-E537B5DFA962}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ecommerce", "InitialProject\Ecommerce.csproj", "{64FFCF97-AD7C-49BC-8F88-E537B5DFA962}"
 	ProjectSection(ProjectDependencies) = postProject
 		{1396EFA5-7E42-46CC-88FA-ECC31D09AB48} = {1396EFA5-7E42-46CC-88FA-ECC31D09AB48}
 		{83A193FA-6F7E-451E-B689-F90BB2889602} = {83A193FA-6F7E-451E-B689-F90BB2889602}
 		{B350317A-AD71-4BBA-874C-2649AB055A08} = {B350317A-AD71-4BBA-874C-2649AB055A08}
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InitialProject.RepositoryLayer", "RepositoryLayer\InitialProject.RepositoryLayer.csproj", "{B350317A-AD71-4BBA-874C-2649AB055A08}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ecommerce.RepositoryLayer", "RepositoryLayer\Ecommerce.RepositoryLayer.csproj", "{B350317A-AD71-4BBA-874C-2649AB055A08}"
 	ProjectSection(ProjectDependencies) = postProject
 		{83A193FA-6F7E-451E-B689-F90BB2889602} = {83A193FA-6F7E-451E-B689-F90BB2889602}
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InitialProject.BusinessLayer", "BusinessLayer\InitialProject.BusinessLayer.csproj", "{1396EFA5-7E42-46CC-88FA-ECC31D09AB48}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ecommerce.BusinessLayer", "BusinessLayer\Ecommerce.BusinessLayer.csproj", "{1396EFA5-7E42-46CC-88FA-ECC31D09AB48}"
 	ProjectSection(ProjectDependencies) = postProject
 		{83A193FA-6F7E-451E-B689-F90BB2889602} = {83A193FA-6F7E-451E-B689-F90BB2889602}
 		{B350317A-AD71-4BBA-874C-2649AB055A08} = {B350317A-AD71-4BBA-874C-2649AB055A08}
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InitialProject.Core", "Core\InitialProject.Core.csproj", "{83A193FA-6F7E-451E-B689-F90BB2889602}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ecommerce.Core", "Core\Ecommerce.Core.csproj", "{83A193FA-6F7E-451E-B689-F90BB2889602}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

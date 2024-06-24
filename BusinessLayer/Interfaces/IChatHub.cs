@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace InitialProject.BusinessLayer.Interfaces
+namespace Ecommerce.BusinessLayer.Interfaces
 {
     public interface IChatHub
     {

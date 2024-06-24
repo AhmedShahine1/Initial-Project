@@ -1,4 +1,4 @@
-﻿using InitialProject.BusinessLayer.Interfaces;
+﻿using Ecommerce.BusinessLayer.Interfaces;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Options;
@@ -6,11 +6,11 @@ using Microsoft.IdentityModel.Tokens;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
-using InitialProject.RepositoryLayer.Interfaces;
+using Ecommerce.RepositoryLayer.Interfaces;
 using System.ComponentModel;
 using System.Data;
 
-namespace InitialProject.BusinessLayer.Services;
+namespace Ecommerce.BusinessLayer.Services;
 
 public class AccountService : IAccountService
 {
@@ -59,7 +59,7 @@ public class AccountService : IAccountService
     //}
 
     //// ------------------------------------------------------------------------------------------------------------------
-    //public async Task<AuthModel> RegisterInitialProject(RegisterInitialProject model)
+    //public async Task<AuthModel> RegisterEcommerce(RegisterEcommerce model)
     //{
     //    if (await _userManager.FindByEmailAsync(model.Email) is not null)
     //        return new AuthModel { Message = "this email is already Exist!", ArMessage = "هذا البريد الالكتروني مستخدم من قبل", ErrorCode = (int)Errors.ThisEmailAlreadyExist };
@@ -71,7 +71,7 @@ public class AccountService : IAccountService
     //    try
     //    {
     //        if (model.Img!=null)
-    //            imgUrl = await _fileHandling.UploadFile(model.Img, "InitialProjectImg");
+    //            imgUrl = await _fileHandling.UploadFile(model.Img, "EcommerceImg");
     //        else
     //            return new AuthModel { Message = "please select  Img for Account!", ArMessage = " من فضلك حدد صورة شخصية ", ErrorCode = (int)Errors.NoPhoto };
     //    }
@@ -93,7 +93,7 @@ public class AccountService : IAccountService
     //        Qualification = model.Qualification,
     //        Status = true,
     //        PhoneNumberConfirmed = true,
-    //        UserType = UserType.InitialProject,
+    //        UserType = UserType.Ecommerce,
     //        IsAdmin = false,
     //        Job = model.Job
     //    };
@@ -103,12 +103,12 @@ public class AccountService : IAccountService
     //        var errors = result.Errors.Aggregate(string.Empty, (current, error) => current + $"{error.Description},");
     //        return new AuthModel { Message = errors, ArMessage = errors, ErrorCode = (int)Errors.ErrorWithCreateAccount };
     //    }
-    //    await _userManager.AddToRoleAsync(user, "InitialProject");
+    //    await _userManager.AddToRoleAsync(user, "Ecommerce");
 
     //    {
-    //        var InitialProject = await _userManager.FindByNameAsync(model.Email);
+    //        var Ecommerce = await _userManager.FindByNameAsync(model.Email);
 
-    //        if (InitialProject is null)
+    //        if (Ecommerce is null)
     //            return new AuthModel
     //            {
     //                Message = "An error occurred creating the account!",
@@ -117,16 +117,16 @@ public class AccountService : IAccountService
     //            };
     //        return new AuthModel
     //        {
-    //            Email = InitialProject.Email,
-    //            PhoneNumber = InitialProject.PhoneNumber,
-    //            FirstName = InitialProject.FirstName,
-    //            LastName = InitialProject.LastName,
+    //            Email = Ecommerce.Email,
+    //            PhoneNumber = Ecommerce.PhoneNumber,
+    //            FirstName = Ecommerce.FirstName,
+    //            LastName = Ecommerce.LastName,
     //            IsAuthenticated = true,
-    //            Qualification = InitialProject.Qualification,
-    //            Roles = new List<string> { "InitialProject" },
-    //            UserType = UserType.InitialProject,
-    //            UserImgUrl = InitialProject.UserImgUrl,
-    //            Job = InitialProject.Job,
+    //            Qualification = Ecommerce.Qualification,
+    //            Roles = new List<string> { "Ecommerce" },
+    //            UserType = UserType.Ecommerce,
+    //            UserImgUrl = Ecommerce.UserImgUrl,
+    //            Job = Ecommerce.Job,
     //            ArMessage = "تم انشاء الحساب بنجاح",
     //            Message = "Account successfully created",
     //        };
@@ -417,7 +417,7 @@ public class AccountService : IAccountService
     //                    break;
     //                case UserType.Youth: imgUrl = await _fileHandling.UploadFile(model.Img, "YouthImg", user.UserImgUrl);
     //                    break;
-    //                case UserType.InitialProject: imgUrl = await _fileHandling.UploadFile(model.Img, "InitialProjectImg", user.UserImgUrl);
+    //                case UserType.Ecommerce: imgUrl = await _fileHandling.UploadFile(model.Img, "EcommerceImg", user.UserImgUrl);
     //                    break;
     //            }
     //        }

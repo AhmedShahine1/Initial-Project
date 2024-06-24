@@ -1,9 +1,9 @@
-using InitialProject.Extensions;
-using InitialProject.Middleware;
-using InitialProject.Core;
-using InitialProject.Extensions;
-using InitialProject.Middleware;
-using InitialProject.SignalR;
+using Ecommerce.Extensions;
+using Ecommerce.Middleware;
+using Ecommerce.Core;
+using Ecommerce.Extensions;
+using Ecommerce.Middleware;
+using Ecommerce.SignalR;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;

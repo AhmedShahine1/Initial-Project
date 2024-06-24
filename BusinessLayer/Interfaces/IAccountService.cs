@@ -1,4 +1,4 @@
-﻿namespace InitialProject.BusinessLayer.Interfaces;
+﻿namespace Ecommerce.BusinessLayer.Interfaces;
 
 public interface IAccountService
 {
@@ -6,7 +6,7 @@ public interface IAccountService
     //Task<ApplicationUser> GetUserById(string userId);
     //Task<ApplicationUser> GetUserByPhoneNumber(string phoneNumber);
     //Task<ApplicationUser> GetUserByEmail(string email);
-    //Task<AuthModel> RegisterInitialProject(RegisterInitialProject model);
+    //Task<AuthModel> RegisterEcommerce(RegisterEcommerce model);
     //Task<AuthModel> RegisterYouth(RegisterYouth model);
     //Task<AuthModel> RegisterAdmin(RegisterAdmin model);
     //Task<AuthModel> LoginAsync(LoginModel model);

@@ -1,4 +1,4 @@
-﻿namespace InitialProject.SignalR
+﻿namespace Ecommerce.SignalR
 {
     public class SignalR
     {

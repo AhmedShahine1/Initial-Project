@@ -1,9 +1,9 @@
 ﻿using System.Text;
-using InitialProject.Core;
+using Ecommerce.Core;
 using Microsoft.IdentityModel.Tokens;
 
 
-namespace InitialProject.Extensions;
+namespace Ecommerce.Extensions;
 
 public static class IdentityServicesExtensions
 {

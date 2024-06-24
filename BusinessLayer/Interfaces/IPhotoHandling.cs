@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Http;
 
-namespace InitialProject.BusinessLayer.Interfaces;
+namespace Ecommerce.BusinessLayer.Interfaces;
 
 public interface IFileHandling
 {

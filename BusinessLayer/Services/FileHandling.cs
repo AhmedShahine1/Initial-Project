@@ -1,8 +1,8 @@
-﻿using InitialProject.BusinessLayer.Interfaces;
+﻿using Ecommerce.BusinessLayer.Interfaces;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 
-namespace InitialProject.BusinessLayer.Services;
+namespace Ecommerce.BusinessLayer.Services;
 
 public class FileHandling : IFileHandling
 {

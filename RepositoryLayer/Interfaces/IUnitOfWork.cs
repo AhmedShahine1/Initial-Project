@@ -1,6 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 
-namespace InitialProject.RepositoryLayer.Interfaces;
+namespace Ecommerce.RepositoryLayer.Interfaces;
 
 public interface IUnitOfWork : IDisposable
 {

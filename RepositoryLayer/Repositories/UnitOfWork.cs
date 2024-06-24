@@ -1,7 +1,7 @@
-﻿using InitialProject.Core;
-using InitialProject.RepositoryLayer.Interfaces;
+﻿using Ecommerce.Core;
+using Ecommerce.RepositoryLayer.Interfaces;
 
-namespace InitialProject.RepositoryLayer.Repositories;
+namespace Ecommerce.RepositoryLayer.Repositories;
 
 public class UnitOfWork : IUnitOfWork
 {

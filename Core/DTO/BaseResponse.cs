@@ -1,4 +1,4 @@
-﻿namespace InitialProject.Core.DTO;
+﻿namespace Ecommerce.Core.DTO;
 
 public class BaseResponse
 {

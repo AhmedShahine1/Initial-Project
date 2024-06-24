@@ -1,12 +1,12 @@
 ﻿using System.Text.Json.Serialization;
-using InitialProject.BusinessLayer.Interfaces;
-using InitialProject.BusinessLayer.Services;
-using InitialProject.Core;
-using InitialProject.RepositoryLayer.Interfaces;
-using InitialProject.RepositoryLayer.Repositories;
+using Ecommerce.BusinessLayer.Interfaces;
+using Ecommerce.BusinessLayer.Services;
+using Ecommerce.Core;
+using Ecommerce.RepositoryLayer.Interfaces;
+using Ecommerce.RepositoryLayer.Repositories;
 using Microsoft.EntityFrameworkCore;
 
-namespace InitialProject.Extensions;
+namespace Ecommerce.Extensions;
 
 public static class ContextServicesExtensions
 {

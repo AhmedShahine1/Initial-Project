@@ -1,7 +1,7 @@
-﻿using InitialProject.BusinessLayer.Interfaces;
-using InitialProject.BusinessLayer.Services;
+﻿using Ecommerce.BusinessLayer.Interfaces;
+using Ecommerce.BusinessLayer.Services;
 
-namespace InitialProject.Extensions;
+namespace Ecommerce.Extensions;
 
 public static class ApplicationServicesExtensions
 {
